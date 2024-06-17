@@ -1,0 +1,45 @@
+features
+
+1. public can view post and filter by category and tags
+2. author can insert post and category and tags
+3. author can remove and edit all post and category, tags
+4. slug used as url friendly
+
+
+database 
+
+1. category (
+    cat_id,
+    cat_slug,
+    cat_title,
+    cat_Description,
+    status = 1
+)
+
+2. posts (
+    title,
+    slug,
+    category_id,
+    description,
+    author_id,
+    content,
+    status = [published, draft, deleted], 
+    dateofcreated,
+    features_image
+)
+
+3. author (
+    author_id,
+    author_slug,
+    author_name,
+    author_description,
+    password,
+    dp=nullable
+)
+
+4. feedback (
+    feedback_id,
+    feedback_subject,
+    feedback_message,
+    feedback_date
+)
